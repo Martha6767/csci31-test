@@ -24,10 +24,14 @@ return (
   <main>
     <div className="flex gap-x-12 my-12 flex-wrap gap-y-6" id="card-container">
        {cards.map((card, index) => <Card key={index} title={card.title} image={card.img} />)}
-    </div>
-    <div> 
+
         {content.map((content, index) => <Content key={index} text={content.text}/>)}
     </div>
+          <Flex classNames="bg-red-200 text-red-600">
+  <span>Child tag one</span>
+  <span>Child tag two</span>
+  <span>Child tag three</span>
+</Flex>
   </main>
 );
 }
